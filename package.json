@@ -1,0 +1,16 @@
+{
+  "name": "bsit1c-gwa-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "renderInputs.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

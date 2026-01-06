@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/output.css"> 
+  <title>BSIT GWA CALCULATOR</title>
+</head>
+<body class="bg-linear-to-r from-sky-300 to-blue-700">
+  <div class="h-screen flex flex-col items-center justify-center">
+    <header class="flex items-center justify-center">
+      <h1 class="text-3xl font-bold bg-gray-100 px-30 py-3 rounded-xl">BSIT 1ST YEAR GWA CALCULATOR</h1>
+    </header>
+    <main class="flex items-center justify-center mt-5">
+      <div class="flex w-min flex-col items-center justify-center bg-gray-100 rounded-xl px-5">
+        <h2 class="mt-6 font-semibold text-2xl">Subject List</h2>
+        <ul class="js-subject-list my-3"></ul>
+        <button class="js-calculate-button mb-6 bg-gray-950 hover:bg-gray-500 cursor-pointer text-white font-bold py-4 px-7 rounded text-xl">Calculate</button>
+      </div>
+      <div class="flex w-min flex-col items-center justify-center bg-gray-100 rounded-xl px-5 ml-5 h-full">
+        <h2 class="mt-6 font-semibold text-2xl">GWA Result</h2>
+        <p class="js-gwa-result font-bold my-10 px-10" style="font-size: 11rem;">0.00</p>
+        <div class="js-gwa-message text-2xl font-semibold mb-10">
+          <p>Your GWA will be displayed above.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="scripts/initPage.js"></script>
+</body>
+</html>
