@@ -20,6 +20,10 @@ export const subjects = [
     units: 3
   }, 
   {
+    name: "GENDSOC",
+    units: 3
+  }, 
+  {
     name: "PAHFIT1",
     units: 2
   }, 
