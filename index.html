@@ -4,6 +4,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/output.css"> 
   <title>BSIT GWA CALCULATOR</title>
+  <style>
+    /* Default large-screen GWA result size */
+    .js-gwa-result {
+      font-size: 11rem;
+    }
+    /* Responsive overrides for small screens */
+    @media (max-width: 640px) {
+      /* Ensure header and main are visible on small screens by
+         avoiding full-viewport fixed height centering which can
+         push the header off-screen when content is tall. */
+      .h-screen {
+        height: auto !important;
+        min-height: 100vh;
+        justify-content: flex-start !important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      main > div {
+        width: 100%;
+        max-width: 520px;
+        margin-left: 0 !important;
+        padding: 1rem !important;
+      }
+
+      .js-gwa-result {
+        font-size: 6rem !important;
+        padding: 1rem !important;
+      }
+
+      .js-subject-list {
+        width: 100%;
+      }
+
+      .js-calculate-button {
+        width: 100%;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      header h1 {
+        font-size: 1.25rem;
+        padding: 0.5rem 0.75rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body class="bg-linear-to-r from-sky-300 to-blue-700">
   <div class="h-screen flex flex-col items-center justify-center">
@@ -18,7 +75,7 @@
       </div>
       <div class="flex w-min flex-col items-center justify-center bg-gray-100 rounded-xl px-5 ml-5 h-full">
         <h2 class="mt-6 font-semibold text-2xl">GWA Result</h2>
-        <p class="js-gwa-result font-bold my-10 px-10" style="font-size: 11rem;">0.00</p>
+        <p class="js-gwa-result font-bold my-10 px-10">0.00</p>
         <div class="js-gwa-message text-2xl font-semibold mb-10">
           <p>Your GWA will be displayed above.</p>
         </div>

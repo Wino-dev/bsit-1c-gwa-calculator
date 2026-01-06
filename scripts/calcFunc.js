@@ -48,5 +48,17 @@ export function calculateGWA() {
     }
 
     document.querySelector('.js-gwa-message').innerHTML = messageHTML;
+
+    // Save current inputs to localStorage so they persist across page loads
+    try {
+      const savedInputs = [];
+      document.querySelectorAll('.js-grade-input').forEach((input) => {
+        // use the data-index added in renderInputs.js to preserve order
+        savedInputs[input.dataset.index] = input.value;
+      });
+      localStorage.setItem('gwaInputs', JSON.stringify(savedInputs));
+    } catch (e) {
+      // ignore localStorage errors
+    }
   }); 
 }
